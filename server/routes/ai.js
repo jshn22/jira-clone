@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const { protect } = require("../middleware/authMiddleware");
+const protect = require("../middleware/auth"); // Changed: removed destructuring
 
 console.log("🤖 AI routes module loaded");
 
