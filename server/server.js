@@ -27,14 +27,12 @@ mongoose
 const authRoutes = require("./routes/authRoutes");
 const projectRoutes = require("./routes/projectRoutes");
 const taskRoutes = require("./routes/taskRoutes");
-const notificationRoutes = require("./routes/notificationRoutes");
 const aiRoutes = require("./routes/ai");
 
 // Register routes
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/tasks", taskRoutes);
-app.use("/api/notifications", notificationRoutes);
 app.use("/api/ai", aiRoutes);
 
 // Health check
