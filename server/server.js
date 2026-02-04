@@ -8,13 +8,16 @@ dotenv.config();
 const app = express();
 
 // Middleware
-const corsOptions = {
-  origin: process.env.FRONTEND_URL || "https://jira-clone-frontend-o45a.onrender.com",
+// const corsOptions = {
+//   origin: process.env.FRONTEND_URL || "https://jira-clone-frontend-o45a.onrender.com",
+//   credentials: true,
+//   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+//   allowedHeaders: ["Content-Type", "Authorization"],
+// };
+app.use(cors({
+  origin: true,        // allow the requesting origin
   credentials: true,
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
-app.use(cors(corsOptions));
+}));
 app.use(express.json());
 
 // Connect to MongoDB
