@@ -1,9 +1,7 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext.jsx";
 import { ProjectProvider } from "./context/ProjectContext.jsx";
 import { TaskProvider } from "./context/TaskContext.jsx";
-import { NotificationProvider } from "./context/NotificationContext.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
