@@ -3,7 +3,7 @@ const router = express.Router();
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const User = require("../models/User");
-const { protect } = require("../middleware/auth"); // Changed from authMiddleware to auth
+const protect = require("../middleware/auth"); // Changed: removed destructuring
 
 // @route   POST /api/auth/register
 // @desc    Register a new user
