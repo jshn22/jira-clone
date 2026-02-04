@@ -3,7 +3,6 @@ import { AuthProvider } from "./context/AuthContext.jsx";
 import { ProjectProvider } from "./context/ProjectContext.jsx";
 import { TaskProvider } from "./context/TaskContext.jsx";
 import Login from "./pages/Login.jsx";
-import Register from "./pages/Register.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import KanbanBoard from "./pages/KanbanBoard.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
