@@ -66,7 +66,7 @@ router.post("/generate-tasks", protect, async (req, res) => {
     }
 
     // Use the most stable model
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-3.1-pro-preview" });
     
     const prompt = `Generate ${count || 5} realistic project management tasks for a project called "${projectName}"${
       description ? ` with description: ${description}` : ""
